@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Show from "./Show";
 
 const Data = () => {
   const [details, setDetails] = useState([]);

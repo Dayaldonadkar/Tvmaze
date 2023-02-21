@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Data from "./Data";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [search, setSearch] = useState("");
   return (
     <div className="bg-[#3f3f3f] h-20 flex justify-center items-center">
       <div className="flex w-3/5 justify-between">

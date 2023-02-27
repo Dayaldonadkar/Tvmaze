@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Show = () => {
   return (
     <div className="flex justify-center bg-[#3C948B]">
-      <div className="flex justify-between font-light text-white w-3/5">
+      <div className="flex justify-between font-light text-white md:w-3/5 space-x-5">
         <Link to="/">
           <h1 className="">Shows</h1>
         </Link>

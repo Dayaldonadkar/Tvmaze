@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [search, setSearch] = useState("");
   return (
-    <div className="bg-[#3f3f3f] h-20 flex justify-center items-center">
-      <div className="flex w-3/5 justify-between">
+    <div className="bg-[#3f3f3f] h-20 flex md:justify-center items-center">
+      <div className="flex md:w-3/5 w-full justify-around">
         <div>
           <Link to="/">
             <img
@@ -25,7 +25,7 @@ const Navbar = () => {
           <button className="bg-[#3C948B] h-10 rounded-r-lg">Search</button>
         </div> */}
 
-        <div className="flex items-center text-2xl text-white font-light space-x-4">
+        <div className="flex items-center md:text-2xl text-white font-light space-x-4">
           <h1>Login</h1>
           <h1>Register</h1>
         </div>

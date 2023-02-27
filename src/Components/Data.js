@@ -36,7 +36,7 @@ const Data = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="w-3/5">
+      <div className="md:w-3/5">
         <input
           className=" bg-white h-10 w-96 rounded-l-lg"
           type="text"
@@ -71,7 +71,7 @@ const Data = () => {
           <button>Music</button> */}
         </div>
         <h1 className="text-3xl py-10">Shows</h1>
-        <div className="grid grid-cols-3 gap-x-60 gap-y-8">
+        <div className="md:grid md:grid-cols-3 gap-x-60 gap-y-8 px-20 space-y-10">
           {loading ? (
             <h1>loading...</h1>
           ) : (

@@ -17,13 +17,13 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <input
             className=" bg-white h-10 w-96 rounded-l-lg"
             placeholder="Search shows and people"
           />
           <button className="bg-[#3C948B] h-10 rounded-r-lg">Search</button>
-        </div>
+        </div> */}
 
         <div className="flex items-center text-2xl text-white font-light space-x-4">
           <h1>Login</h1>

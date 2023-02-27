@@ -6,14 +6,13 @@ const Data = () => {
   const [loading, setLoading] = useState(false);
   const [details, setDetails] = useState([]);
   const [searchTitle, setSearchTitle] = useState("");
-  let data = [];
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       const dayal = await fetch("https://api.tvmaze.com/search/shows?q=all");
       const d = await dayal.json();
       setDetails(d);
-      data = [...d];
       setLoading(false);
     };
 
@@ -21,8 +20,7 @@ const Data = () => {
   }, []);
 
   const filterItem = (genres) => {
-    console.log(data);
-    const updatedItems = data.filter((currElem) => {
+    const updatedItems = details.filter((currElem) => {
       // console.log(currElem.show.genres.length);
       // let i;
 
